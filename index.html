@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Ações Afirmativas — Vestibular IFSULDEMINAS 2027</title>
+<meta name="description" content="Descubra em qual modalidade de concorrência (Ampla Concorrência, PcD Geral ou uma das linhas de Ações Afirmativas) você pode se inscrever no Vestibular IFSULDEMINAS 2027.">
+<meta name="robots" content="noindex">
+<style>
+  html, body { margin: 0; padding: 0; background: #F5F6F0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .ifsm-page-wrap { padding: 1.5rem 1rem 3rem; }
+</style>
+</head>
+<body>
+<div class="ifsm-page-wrap">
+<div id="ifsm-aa-quiz">
+<style>
+  #ifsm-aa-quiz {
+    --ifsm-bg: #F5F6F0;
+    --ifsm-panel: #FFFFFF;
+    --ifsm-primary: #1F4B3F;
+    --ifsm-primary-dark: #163A31;
+    --ifsm-primary-tint: #E4ECE7;
+    --ifsm-accent: #B8631F;
+    --ifsm-accent-tint: #F6E9DA;
+    --ifsm-text: #17241E;
+    --ifsm-text-soft: #4B564F;
+    --ifsm-border: #D9D7C8;
+    --ifsm-warn-bg: #FBF0D9;
+    --ifsm-warn-text: #7A4E00;
+    --ifsm-radius: 6px;
+    font-family: "IFSM Body", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ifsm-text);
+    background: var(--ifsm-bg);
+    max-width: 640px;
+    margin: 2rem auto;
+    border: 1px solid var(--ifsm-border);
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  #ifsm-aa-quiz *, #ifsm-aa-quiz *::before, #ifsm-aa-quiz *::after { box-sizing: inherit; }
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+  #ifsm-aa-quiz { font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  #ifsm-aa-quiz .ifsm-serif { font-family: "Fraunces", Georgia, "Times New Roman", serif; }
+
+  #ifsm-aa-quiz .ifsm-head {
+    background: var(--ifsm-primary);
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+  }
+  #ifsm-aa-quiz .ifsm-head-row { display: flex; align-items: center; }
+  #ifsm-aa-quiz .ifsm-eyebrow { font-size: .78rem; opacity: .85; margin: 0 0 .15rem; }
+  #ifsm-aa-quiz .ifsm-h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+
+  #ifsm-aa-quiz .ifsm-progress-track {
+    height: 5px;
+    background: var(--ifsm-primary-dark);
+  }
+  #ifsm-aa-quiz .ifsm-progress-fill {
+    height: 100%;
+    background: var(--ifsm-accent);
+    width: 0%;
+    transition: width .35s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #ifsm-aa-quiz .ifsm-progress-fill { transition: none; }
+  }
+
+  #ifsm-aa-quiz .ifsm-stage { padding: 1.75rem 1.5rem 1.5rem; background: var(--ifsm-panel); }
+  #ifsm-aa-quiz .ifsm-step-label {
+    font-size: .8rem;
+    color: var(--ifsm-text-soft);
+    margin: 0 0 .35rem;
+  }
+  #ifsm-aa-quiz .ifsm-question {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin: 0 0 .4rem;
+  }
+  #ifsm-aa-quiz .ifsm-help {
+    font-size: .88rem;
+    color: var(--ifsm-text-soft);
+    margin: 0 0 1.1rem;
+  }
+  #ifsm-aa-quiz details.ifsm-details {
+    margin: -.4rem 0 1.1rem;
+    font-size: .85rem;
+    color: var(--ifsm-text-soft);
+  }
+  #ifsm-aa-quiz details.ifsm-details summary {
+    cursor: pointer;
+    color: var(--ifsm-primary);
+    font-weight: 500;
+  }
+  #ifsm-aa-quiz details.ifsm-details[open] summary { margin-bottom: .4rem; }
+
+  #ifsm-aa-quiz .ifsm-options { display: flex; flex-direction: column; border-top: 1px solid var(--ifsm-border); }
+  #ifsm-aa-quiz .ifsm-option {
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--ifsm-border);
+    padding: .85rem .25rem;
+    font: inherit;
+    color: var(--ifsm-text);
+    cursor: pointer;
+    min-height: 48px;
+  }
+  #ifsm-aa-quiz .ifsm-option:hover { background: var(--ifsm-primary-tint); }
+  #ifsm-aa-quiz .ifsm-option:focus-visible { outline: 2px solid var(--ifsm-primary); outline-offset: -2px; }
+  #ifsm-aa-quiz .ifsm-option.is-selected { background: var(--ifsm-primary); color: #fff; }
+  #ifsm-aa-quiz .ifsm-option.is-selected .ifsm-option-sub { color: rgba(255,255,255,.85); }
+  #ifsm-aa-quiz .ifsm-option-dot {
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 2px solid var(--ifsm-text-soft);
+    flex-shrink: 0; margin-top: .15rem;
+    position: relative;
+  }
+  #ifsm-aa-quiz .ifsm-option.is-selected .ifsm-option-dot { border-color: #fff; }
+  #ifsm-aa-quiz .ifsm-option.is-selected .ifsm-option-dot::after {
+    content: ""; position: absolute; inset: 3px; border-radius: 50%; background: #fff;
+  }
+  #ifsm-aa-quiz .ifsm-option-title { font-weight: 500; }
+  #ifsm-aa-quiz .ifsm-option-sub { font-size: .82rem; color: var(--ifsm-text-soft); margin-top: .1rem; }
+
+  #ifsm-aa-quiz .ifsm-field { margin-bottom: 1rem; }
+  #ifsm-aa-quiz .ifsm-field label { display: block; font-size: .88rem; font-weight: 500; margin-bottom: .3rem; }
+  #ifsm-aa-quiz .ifsm-field input[type="number"] {
+    width: 100%; padding: .6rem .7rem; font: inherit; font-size: 1rem;
+    border: 1px solid var(--ifsm-border); border-radius: var(--ifsm-radius); background: #fff; color: var(--ifsm-text);
+  }
+  #ifsm-aa-quiz .ifsm-field input[type="number"]:focus-visible { outline: 2px solid var(--ifsm-primary); }
+  #ifsm-aa-quiz .ifsm-income-result {
+    background: var(--ifsm-primary-tint); border-radius: var(--ifsm-radius);
+    padding: .75rem .9rem; font-size: .9rem; margin-top: .9rem;
+  }
+  #ifsm-aa-quiz .ifsm-income-result strong { font-family: "Fraunces", Georgia, serif; font-size: 1.05rem; }
+  #ifsm-aa-quiz .ifsm-skip-link {
+    display: inline-block; margin-top: .9rem; font-size: .85rem;
+    color: var(--ifsm-primary); background: none; border: none; padding: 0; cursor: pointer; text-decoration: underline;
+    font: inherit;
+  }
+
+  #ifsm-aa-quiz .ifsm-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; }
+  #ifsm-aa-quiz .ifsm-btn {
+    font: inherit; font-weight: 500; font-size: .92rem; border-radius: var(--ifsm-radius);
+    padding: .65rem 1.3rem; cursor: pointer; border: 1px solid transparent;
+  }
+  #ifsm-aa-quiz .ifsm-btn-primary { background: var(--ifsm-primary); color: #fff; }
+  #ifsm-aa-quiz .ifsm-btn-primary:hover:not(:disabled) { background: var(--ifsm-primary-dark); }
+  #ifsm-aa-quiz .ifsm-btn-primary:disabled { background: #A9B5AE; cursor: not-allowed; }
+  #ifsm-aa-quiz .ifsm-btn-ghost { background: none; color: var(--ifsm-primary); border-color: var(--ifsm-border); }
+  #ifsm-aa-quiz .ifsm-btn-ghost:hover { background: var(--ifsm-primary-tint); }
+  #ifsm-aa-quiz .ifsm-btn:focus-visible { outline: 2px solid var(--ifsm-primary); outline-offset: 2px; }
+
+  #ifsm-aa-quiz .ifsm-disclaimer {
+    background: var(--ifsm-warn-bg); color: var(--ifsm-warn-text);
+    border-radius: var(--ifsm-radius); padding: .8rem .95rem; font-size: .85rem; margin-top: 1.25rem;
+  }
+  #ifsm-aa-quiz .ifsm-disclaimer strong { display: block; margin-bottom: .2rem; }
+
+  #ifsm-aa-quiz .ifsm-result-summary { font-size: .95rem; margin: 0 0 1.3rem; color: var(--ifsm-text-soft); }
+  #ifsm-aa-quiz .ifsm-result-line {
+    display: flex; border: 1px solid var(--ifsm-border); border-radius: var(--ifsm-radius);
+    overflow: hidden; margin-bottom: .8rem;
+  }
+  #ifsm-aa-quiz .ifsm-result-code {
+    background: var(--ifsm-primary); color: #fff; min-width: 92px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1rem; padding: .8rem .5rem;
+    border-right: 2px dashed rgba(255,255,255,.45);
+  }
+  #ifsm-aa-quiz .ifsm-result-desc { padding: .8rem 1rem; flex: 1; }
+  #ifsm-aa-quiz .ifsm-result-desc .t { font-weight: 600; margin: 0 0 .2rem; font-size: .95rem; }
+  #ifsm-aa-quiz .ifsm-result-desc .d { font-size: .85rem; color: var(--ifsm-text-soft); margin: 0; }
+  #ifsm-aa-quiz .ifsm-notes { margin: 1.1rem 0 0; padding-left: 1.1rem; font-size: .85rem; color: var(--ifsm-text-soft); }
+  #ifsm-aa-quiz .ifsm-notes li { margin-bottom: .4rem; }
+  #ifsm-aa-quiz .ifsm-edital-tag {
+    display: inline-block; font-size: .78rem; color: var(--ifsm-accent); background: var(--ifsm-accent-tint);
+    border-radius: 999px; padding: .25rem .7rem; margin-bottom: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    #ifsm-aa-quiz { margin: 1rem 0; border-radius: 0; }
+    #ifsm-aa-quiz .ifsm-h1 { font-size: 1.1rem; }
+    #ifsm-aa-quiz .ifsm-question { font-size: 1.15rem; }
+  }
+</style>
+
+<div class="ifsm-head">
+  <div class="ifsm-head-row">
+    <div>
+      <p class="ifsm-eyebrow">Vestibular 2027 IFSULDEMINAS</p>
+      <h2 class="ifsm-h1">Simulador de ações afirmativas</h2>
+    </div>
+  </div>
+</div>
+<div class="ifsm-progress-track"><div class="ifsm-progress-fill" id="ifsm-progress-fill"></div></div>
+<div class="ifsm-stage" id="ifsm-stage"></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------------------------------------------------------------------
+  // CONFIGURAÇÃO. Ajuste aqui a cada novo processo seletivo
+  // ---------------------------------------------------------------------
+  var APP_CONFIG = {
+    // Renda familiar bruta per capita usada como linha de corte das
+    // linhas "LB_..." (renda baixa). O edital 2027 define o critério como
+    // "igual ou inferior a 1 (um) salário-mínimo per capita", mas o VALOR
+    // em reais referente a 2027 ainda não havia sido publicado pelo
+    // IFSULDEMINAS até a criação deste simulador (set/2026). Está sendo
+    // usado, provisoriamente, o salário-mínimo nacional vigente em 2026.
+    // >>> ATUALIZE este número assim que o edital divulgar o valor oficial. <<<
+    incomePerCapitaThreshold: 1621.00,
+    incomeThresholdIsProvisional: true,
+
+    editalLabel: {
+      superior: "Edital 211/2026: Cursos Superiores",
+      integrado: "Edital 210/2026: Cursos Técnicos Integrados ao Ensino Médio",
+      subsequente: "Edital 209/2026 (Técnico em Enfermagem) ou 212/2026 (demais cursos técnicos subsequentes)"
+    },
+    schoolLevelLabel: {
+      superior: "Ensino Médio",
+      integrado: "Ensino Fundamental",
+      subsequente: "Ensino Fundamental"
+    }
+  };
+
+  // ---------------------------------------------------------------------
+  // ESTADO
+  // ---------------------------------------------------------------------
+  var state = {
+    courseType: null,      // 'superior' | 'integrado' | 'subsequente'
+    schoolType: null,      // 'public' | 'private'
+    pcd: null,              // true | false
+    ppi: null,              // true | false
+    quilombola: null,       // true | false
+    incomeLow: null,        // true | false | null (não informado)
+    totalIncome: null,
+    familySize: null
+  };
+  var history = [];
+  var current = "intro";
+
+  var stepWeight = { courseType: 1, schoolType: 2, pcd: 3, ppi: 4, quilombola: 5, income: 6 };
+
+  function fmtBRL(n) {
+    return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function nextStepId() {
+    switch (current) {
+      case "intro": return "courseType";
+      case "courseType": return "schoolType";
+      case "schoolType": return "pcd";
+      case "pcd": return state.schoolType === "private" ? "result" : "ppi";
+      case "ppi": return "quilombola";
+      case "quilombola": return "income";
+      case "income": return "result";
+      default: return "result";
+    }
+  }
+
+  function goNext() {
+    var target = nextStepId();
+    history.push(current);
+    current = target;
+    render();
+  }
+  function goBack() {
+    if (history.length === 0) return;
+    current = history.pop();
+    render();
+  }
+  function restart() {
+    state = { courseType: null, schoolType: null, pcd: null, ppi: null, quilombola: null, incomeLow: null, totalIncome: null, familySize: null };
+    history = [];
+    current = "intro";
+    render();
+  }
+
+  // ---------------------------------------------------------------------
+  // RESULTADO
+  // ---------------------------------------------------------------------
+  function buildResult() {
+    var level = APP_CONFIG.schoolLevelLabel[state.courseType];
+    var edital = APP_CONFIG.editalLabel[state.courseType];
+
+    if (state.schoolType === "private") {
+      if (state.pcd === true) {
+        return {
+          headline: "PcD Geral",
+          summary: "Você concorre à cota institucional PcD Geral, destinada a pessoas com deficiência comprovada por laudo médico. Essa cota não exige ter cursado o " + level + " em escola pública.",
+          lines: [{
+            code: "PcD Geral",
+            title: "Pessoas com Deficiência (fora das Ações Afirmativas)",
+            desc: "Vaga reservada especificamente a pessoas com deficiência. Não exige comprovação de renda nem de escola pública, apenas laudo médico."
+          }],
+          edital: edital,
+          notes: []
+        };
+      }
+      return {
+        headline: "Ampla Concorrência (AC)",
+        summary: "Como você cursou parte ou todo o " + level + " em escola particular, você concorre pela Ampla Concorrência, disputada por todos(as) os(as) candidatos(as).",
+        lines: [{
+          code: "AC",
+          title: "Ampla Concorrência",
+          desc: "Vaga sem reserva de cota, sem exigência de renda, escolaridade anterior ou autodeclaração."
+        }],
+        edital: edital,
+        notes: []
+      };
+    }
+
+    // ramo escola pública / equivalente
+    var lines = [];
+    lines.push({
+      code: "LI_EP",
+      title: "Renda independente + Escola Pública",
+      desc: "Para quem cursou integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital), sem exigência de renda baixa nem de autodeclaração racial, quilombola ou de deficiência."
+    });
+    if (state.ppi) {
+      lines.push({
+        code: "LI_PPI",
+        title: "Renda independente + Preto(a), pardo(a) ou indígena",
+        desc: "Mesma condição de escolaridade pública, com autodeclaração de cor/raça (sujeita a procedimento de heteroidentificação)."
+      });
+    }
+    if (state.quilombola) {
+      lines.push({
+        code: "LI_Q",
+        title: "Renda independente + Quilombola",
+        desc: "Mesma condição de escolaridade pública, com autodeclaração de pertencimento a comunidade quilombola."
+      });
+    }
+    if (state.pcd) {
+      lines.push({
+        code: "LI_PCD",
+        title: "Renda independente + Pessoa com Deficiência",
+        desc: "Mesma condição de escolaridade pública, para candidatos(as) com deficiência comprovada por laudo médico, dentro do sistema de Ações Afirmativas."
+      });
+    }
+    if (state.incomeLow === true) {
+      lines.push({
+        code: "LB_EP",
+        title: "Renda baixa + Escola Pública",
+        desc: "Além da escolaridade pública, exige renda familiar bruta per capita igual ou inferior a 1 salário-mínimo, comprovada pela Folha Resumo do CadÚnico."
+      });
+      if (state.ppi) lines.push({ code: "LB_PPI", title: "Renda baixa + Preto(a), pardo(a) ou indígena", desc: "Combina renda baixa comprovada com autodeclaração de cor/raça." });
+      if (state.quilombola) lines.push({ code: "LB_Q", title: "Renda baixa + Quilombola", desc: "Combina renda baixa comprovada com autodeclaração de pertencimento quilombola." });
+      if (state.pcd) lines.push({ code: "LB_PCD", title: "Renda baixa + Pessoa com Deficiência", desc: "Combina renda baixa comprovada com deficiência comprovada por laudo médico." });
+    }
+
+    var notes = [];
+    if (state.pcd) notes.push("Por ser pessoa com deficiência, você também pode optar pela cota institucional PcD Geral (fora do sistema de Ações Afirmativas), que não exige comprovação de escola pública.");
+    notes.push("Mesmo se enquadrando em uma ou mais Ações Afirmativas, você pode optar por concorrer apenas pela Ampla Concorrência, se preferir não usar nenhuma cota.");
+    if (state.incomeLow === null) {
+      notes.push("Você não informou a renda familiar. Se ela for igual ou inferior a " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + " por pessoa (valor provisório, veja o aviso abaixo), você também se enquadra nas linhas de renda baixa (\u201cLB_...\u201d) correspondentes.");
+    }
+    notes.push("No ato da inscrição, você escolherá apenas UMA linha entre as listadas abaixo. Escolha a que melhor representa sua situação e para a qual você tem como reunir a documentação exigida.");
+
+    return {
+      headline: "Linhas de Ação Afirmativa compatíveis",
+      summary: "Você atende ao pré-requisito de ter cursado integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital). Veja abaixo as linhas em que você pode se inscrever.",
+      lines: lines,
+      edital: edital,
+      notes: notes
+    };
+  }
+
+  // ---------------------------------------------------------------------
+  // RENDER
+  // ---------------------------------------------------------------------
+  var stage = document.getElementById("ifsm-stage");
+  var progressFill = document.getElementById("ifsm-progress-fill");
+
+  function updateProgress() {
+    var pct = 0;
+    if (current === "intro") pct = 0;
+    else if (current === "result") pct = 100;
+    else {
+      var total = state.schoolType === "private" ? 3 : 6;
+      pct = Math.round((stepWeight[current] / total) * 100);
+    }
+    progressFill.style.width = pct + "%";
+  }
+
+  function optionRow(container, opts) {
+    // opts: {selected, title, sub, onClick}
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "ifsm-option" + (opts.selected ? " is-selected" : "");
+    btn.innerHTML =
+      '<span class="ifsm-option-dot" aria-hidden="true"></span>' +
+      '<span><span class="ifsm-option-title">' + opts.title + '</span>' +
+      (opts.sub ? '<div class="ifsm-option-sub">' + opts.sub + '</div>' : '') +
+      '</span>';
+    btn.addEventListener("click", opts.onClick);
+    container.appendChild(btn);
+    return btn;
+  }
+
+  function render() {
+    updateProgress();
+    stage.innerHTML = "";
+
+    if (current === "intro") return renderIntro();
+    if (current === "courseType") return renderCourseType();
+    if (current === "schoolType") return renderSchoolType();
+    if (current === "pcd") return renderYesNo({
+      key: "pcd",
+      label: "Pergunta " + stepWeight.pcd + " de " + (state.schoolType === "private" ? 3 : 6),
+      question: "Você é pessoa com deficiência, comprovada por laudo médico?",
+      help: "Considera-se pessoa com deficiência quem se enquadra nas categorias do Decreto nº 3.298/1999, com comprovação por laudo médico no ato da matrícula."
+    });
+    if (current === "ppi") return renderYesNo({
+      key: "ppi",
+      label: "Pergunta " + stepWeight.ppi + " de 6",
+      question: "Você se autodeclara preto(a), pardo(a) ou indígena?",
+      help: "Essa autodeclaração poderá passar por procedimento de heteroidentificação promovido pelo IFSULDEMINAS, conforme a Portaria MEC nº 2.027/2023."
+    });
+    if (current === "quilombola") return renderYesNo({
+      key: "quilombola",
+      label: "Pergunta " + stepWeight.quilombola + " de 6",
+      question: "Você se autodeclara quilombola, integrante de comunidade remanescente de quilombo?",
+      help: "Diz respeito ao pertencimento a comunidade quilombola reconhecida, e é independente da resposta que você deu sobre cor/raça."
+    });
+    if (current === "income") return renderIncome();
+    if (current === "result") return renderResult();
+  }
+
+  function renderIntro() {
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<p class="ifsm-step-label">Antes de começar</p>' +
+      '<h3 class="ifsm-question">Descubra em qual modalidade de concorrência você pode se inscrever</h3>' +
+      '<p class="ifsm-help">Responda a algumas perguntas sobre sua trajetória escolar, renda familiar e autodeclarações. Ao final, você verá as linhas de Ação Afirmativa, PcD Geral ou Ampla Concorrência compatíveis com a sua situação, segundo os editais do Vestibular IFSULDEMINAS 2027 (ingresso em 2027/1).</p>' +
+      '<div class="ifsm-disclaimer"><strong>Este simulador é só um apoio.</strong> Ele não substitui a leitura do edital nem faz sua inscrição. A palavra final sobre enquadramento e documentação é sempre da Comissão do Processo Seletivo do IFSULDEMINAS.</div>';
+    stage.appendChild(wrap);
+    appendNav({ showBack: false, nextLabel: "Iniciar simulação" });
+  }
+
+  function renderCourseType() {
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.courseType + ' de 6</p>' +
+      '<h3 class="ifsm-question">A qual tipo de curso você vai concorrer?</h3>' +
+      '<p class="ifsm-help">Isso define qual edital e qual etapa de escolaridade (Fundamental ou Médio) valem para o seu caso.</p>';
+    stage.appendChild(wrap);
+
+    var opts = document.createElement("div");
+    opts.className = "ifsm-options";
+    stage.appendChild(opts);
+
+    var items = [
+      { value: "superior", title: "Curso superior (graduação)", sub: "Bacharelado, licenciatura ou tecnólogo. Edital 211/2026." },
+      { value: "integrado", title: "Técnico integrado ao Ensino Médio", sub: "Edital 210/2026" },
+      { value: "subsequente", title: "Técnico subsequente", sub: "Para quem já concluiu o Ensino Médio. Editais 209/2026 e 212/2026." }
+    ];
+    items.forEach(function (it) {
+      optionRow(opts, {
+        selected: state.courseType === it.value,
+        title: it.title,
+        sub: it.sub,
+        onClick: function () { state.courseType = it.value; render(); }
+      });
+    });
+
+    appendNav({ showBack: true, nextDisabled: !state.courseType });
+  }
+
+  function renderSchoolType() {
+    var level = APP_CONFIG.schoolLevelLabel[state.courseType];
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.schoolType + ' de 6</p>' +
+      '<h3 class="ifsm-question">Como você cursou (ou vai concluir) integralmente o ' + level + '?</h3>';
+    stage.appendChild(wrap);
+
+    var details = document.createElement("details");
+    details.className = "ifsm-details";
+    details.innerHTML = "<summary>O que conta como escola pública?</summary>" +
+      "<p>Escolas criadas, mantidas e administradas pelo Poder Público, e também escolas comunitárias de educação do campo (como EFAs e CFRs) conveniadas com o poder público. Escolas do Sistema S (SENAI, SENAC etc.), APAEs e demais entidades filantrópicas ou privadas NÃO contam como escola pública, mesmo com bolsa de estudos integral.</p>";
+    stage.appendChild(details);
+
+    var opts = document.createElement("div");
+    opts.className = "ifsm-options";
+    stage.appendChild(opts);
+
+    var items = [
+      { value: "public", title: "Integralmente em escola pública", sub: "Inclui escolas comunitárias de educação do campo conveniadas com o poder público" },
+      { value: "public", title: "Certificação via ENCCEJA ou exame de instituição pública", sub: "Exames como CESEC, ENCCEJA ou avaliações de jovens e adultos de sistemas públicos de ensino contam como escolaridade pública" },
+      { value: "private", title: "Integral ou parcialmente em escola particular", sub: "Mesmo com bolsa de estudos integral" }
+    ];
+    items.forEach(function (it, idx) {
+      optionRow(opts, {
+        selected: state.schoolType === it.value && state._schoolChoiceIdx === idx,
+        title: it.title,
+        sub: it.sub,
+        onClick: function () { state.schoolType = it.value; state._schoolChoiceIdx = idx; render(); }
+      });
+    });
+
+    appendNav({ showBack: true, nextDisabled: !state.schoolType });
+  }
+
+  function renderYesNo(opts) {
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<p class="ifsm-step-label">' + opts.label + '</p>' +
+      '<h3 class="ifsm-question">' + opts.question + '</h3>' +
+      (opts.help ? '<p class="ifsm-help">' + opts.help + '</p>' : '');
+    stage.appendChild(wrap);
+
+    var row = document.createElement("div");
+    row.className = "ifsm-options";
+    stage.appendChild(row);
+
+    [{ v: true, t: "Sim" }, { v: false, t: "Não" }].forEach(function (it) {
+      optionRow(row, {
+        selected: state[opts.key] === it.v,
+        title: it.t,
+        onClick: function () { state[opts.key] = it.v; render(); }
+      });
+    });
+
+    appendNav({ showBack: true, nextDisabled: state[opts.key] === null });
+  }
+
+  function renderIncome() {
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.income + ' de 6</p>' +
+      '<h3 class="ifsm-question">Qual é a renda familiar bruta per capita?</h3>' +
+      '<p class="ifsm-help">Some a renda bruta de todas as pessoas da sua família (média dos últimos 3 meses) e informe quantas pessoas moram na casa. O cálculo é feito automaticamente.</p>';
+    stage.appendChild(wrap);
+
+    var details = document.createElement("details");
+    details.className = "ifsm-details";
+    details.innerHTML = "<summary>O que é \u201crenda bruta\u201d e \u201cmédia dos últimos 3 meses\u201d?</summary>" +
+      "<p><strong>Renda bruta</strong> é o valor total recebido antes de qualquer desconto (sem tirar imposto de renda, INSS, plano de saúde etc.). Some tudo o que cada pessoa da casa recebeu: salário, aposentadoria, pensão, bico ou trabalho informal, benefícios sociais (como Bolsa Família), aluguéis recebidos e outras fontes de renda.</p>" +
+      "<p><strong>Média dos últimos 3 meses</strong> quer dizer que você não deve usar apenas o valor do mês atual. Some a renda bruta da família em cada um dos 3 meses anteriores à inscrição, depois divida o total por 3. Isso evita que um mês fora do padrão (para mais ou para menos) distorça o resultado.</p>" +
+      "<p>Depois de calcular essa média mensal da família, divida pelo número de pessoas da casa: esse é o valor de renda per capita que o formulário abaixo calcula automaticamente para você.</p>";
+    stage.appendChild(details);
+
+    var prefillTotal = state.totalIncome !== null ? state.totalIncome : "";
+    var prefillPeople = state.familySize !== null ? state.familySize : "";
+
+    var f1 = document.createElement("div");
+    f1.className = "ifsm-field";
+    f1.innerHTML = '<label for="ifsm-income-total">Renda bruta mensal total da família, já na média dos últimos 3 meses (R$)</label>' +
+      '<input type="number" min="0" step="0.01" id="ifsm-income-total" placeholder="Ex.: 3200,00" value="' + prefillTotal + '">';
+    stage.appendChild(f1);
+
+    var f2 = document.createElement("div");
+    f2.className = "ifsm-field";
+    f2.innerHTML = '<label for="ifsm-income-people">Número de pessoas na família (incluindo você)</label>' +
+      '<input type="number" min="1" step="1" id="ifsm-income-people" placeholder="Ex.: 4" value="' + prefillPeople + '">';
+    stage.appendChild(f2);
+
+    var resultBox = document.createElement("div");
+    resultBox.className = "ifsm-income-result";
+    resultBox.id = "ifsm-income-feedback";
+    resultBox.style.display = "none";
+    stage.appendChild(resultBox);
+
+    var skip = document.createElement("button");
+    skip.type = "button";
+    skip.className = "ifsm-skip-link";
+    skip.textContent = "Prefiro não informar a renda agora";
+    skip.addEventListener("click", function () {
+      state.incomeLow = null;
+      state.totalIncome = null;
+      state.familySize = null;
+      goNext();
+    });
+    stage.appendChild(skip);
+
+    var inputTotal = document.getElementById("ifsm-income-total");
+    var inputPeople = document.getElementById("ifsm-income-people");
+    var nextBtnRef;
+
+    function recompute() {
+      var total = parseFloat(inputTotal.value);
+      var people = parseInt(inputPeople.value, 10);
+      if (!isNaN(total) && !isNaN(people) && people > 0 && total >= 0) {
+        var perCapita = total / people;
+        var low = perCapita <= APP_CONFIG.incomePerCapitaThreshold;
+        state.totalIncome = total;
+        state.familySize = people;
+        state.incomeLow = low;
+        resultBox.style.display = "block";
+        resultBox.innerHTML = "Renda per capita: <strong>" + fmtBRL(perCapita) + "</strong><br>" +
+          (low
+            ? "Igual ou inferior ao valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Você também pode se enquadrar nas linhas de renda baixa."
+            : "Acima do valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Você se enquadra apenas nas linhas independentes de renda.");
+        if (nextBtnRef) nextBtnRef.disabled = false;
+      } else {
+        resultBox.style.display = "none";
+        state.incomeLow = null;
+        if (nextBtnRef) nextBtnRef.disabled = true;
+      }
+    }
+    inputTotal.addEventListener("input", recompute);
+    inputPeople.addEventListener("input", recompute);
+    if (state.totalIncome !== null && state.familySize !== null) recompute();
+
+    var incomeNote = document.createElement("p");
+    incomeNote.className = "ifsm-help";
+    incomeNote.style.marginTop = "1rem";
+    incomeNote.innerHTML = APP_CONFIG.incomeThresholdIsProvisional
+      ? "<em>Valor de referência provisório: " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + ", visto que o salário mínimo oficial de 2027 ainda não foi definido oficialmente.</em>"
+      : "";
+    stage.appendChild(incomeNote);
+
+    nextBtnRef = appendNav({ showBack: true, nextDisabled: state.incomeLow === null });
+  }
+
+  function renderResult() {
+    var result = buildResult();
+    var wrap = document.createElement("div");
+    wrap.innerHTML =
+      '<span class="ifsm-edital-tag">' + result.edital + '</span>' +
+      '<h3 class="ifsm-question">' + result.headline + '</h3>' +
+      '<p class="ifsm-result-summary">' + result.summary + '</p>';
+    stage.appendChild(wrap);
+
+    var list = document.createElement("div");
+    result.lines.forEach(function (l) {
+      var row = document.createElement("div");
+      row.className = "ifsm-result-line";
+      row.innerHTML =
+        '<div class="ifsm-result-code">' + l.code + '</div>' +
+        '<div class="ifsm-result-desc"><p class="t">' + l.title + '</p><p class="d">' + l.desc + '</p></div>';
+      list.appendChild(row);
+    });
+    stage.appendChild(list);
+
+    if (result.notes.length) {
+      var ul = document.createElement("ul");
+      ul.className = "ifsm-notes";
+      result.notes.forEach(function (n) {
+        var li = document.createElement("li");
+        li.textContent = n;
+        ul.appendChild(li);
+      });
+      stage.appendChild(ul);
+    }
+
+    var disclaimer = document.createElement("div");
+    disclaimer.className = "ifsm-disclaimer";
+    disclaimer.innerHTML = "<strong>Confirme sempre no edital oficial.</strong> A comprovação de renda é feita pela Folha Resumo do CadÚnico atualizada. A comprovação de cor/raça, deficiência e pertencimento quilombola segue procedimentos próprios (heteroidentificação, laudo médico, autodeclaração) descritos na seção de documentação do edital escolhido. Em caso de dúvida, entre em contato pelos telefones e e-mails disponíveis no edital.";
+    stage.appendChild(disclaimer);
+
+    var nav = document.createElement("div");
+    nav.className = "ifsm-nav";
+    var back = document.createElement("button");
+    back.type = "button";
+    back.className = "ifsm-btn ifsm-btn-ghost";
+    back.textContent = "Voltar e revisar respostas";
+    back.addEventListener("click", goBack);
+    var again = document.createElement("button");
+    again.type = "button";
+    again.className = "ifsm-btn ifsm-btn-primary";
+    again.textContent = "Refazer do início";
+    again.addEventListener("click", restart);
+    nav.appendChild(back);
+    nav.appendChild(again);
+    stage.appendChild(nav);
+  }
+
+  function appendNav(opts) {
+    var nav = document.createElement("div");
+    nav.className = "ifsm-nav";
+
+    if (opts.showBack) {
+      var back = document.createElement("button");
+      back.type = "button";
+      back.className = "ifsm-btn ifsm-btn-ghost";
+      back.textContent = "Voltar";
+      back.addEventListener("click", goBack);
+      nav.appendChild(back);
+    } else {
+      nav.appendChild(document.createElement("span"));
+    }
+
+    var next = document.createElement("button");
+    next.type = "button";
+    next.className = "ifsm-btn ifsm-btn-primary";
+    next.textContent = opts.nextLabel || "Avançar";
+    next.disabled = !!opts.nextDisabled;
+    next.addEventListener("click", goNext);
+    nav.appendChild(next);
+
+    stage.appendChild(nav);
+    return next;
+  }
+
+  render();
+})();
+</script>
+</div>
+</body>
+</html>
