@@ -7,6 +7,7 @@
 <meta name="description" content="Descubra em qual modalidade de concorrência (Ampla Concorrência, PcD Geral ou uma das linhas de Ações Afirmativas) você pode se inscrever no Vestibular IFSULDEMINAS 2027.">
 <meta name="robots" content="noindex">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;
   html, body { margin: 0; padding: 0; background: #F5F6F0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   .ifsm-page-wrap { padding: 1.5rem 1rem 3rem; }
 </style>
@@ -42,9 +43,11 @@
   }
   #ifsm-aa-quiz *, #ifsm-aa-quiz *::before, #ifsm-aa-quiz *::after { box-sizing: inherit; }
 
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
   #ifsm-aa-quiz { font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   #ifsm-aa-quiz .ifsm-serif { font-family: "Fraunces", Georgia, "Times New Roman", serif; }
+
 
   #ifsm-aa-quiz .ifsm-head {
     background: var(--ifsm-primary);
@@ -54,6 +57,7 @@
   #ifsm-aa-quiz .ifsm-head-row { display: flex; align-items: center; }
   #ifsm-aa-quiz .ifsm-eyebrow { font-size: .78rem; opacity: .85; margin: 0 0 .15rem; }
   #ifsm-aa-quiz .ifsm-h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+
 
   #ifsm-aa-quiz .ifsm-progress-track {
     height: 5px;
@@ -68,6 +72,7 @@
   @media (prefers-reduced-motion: reduce) {
     #ifsm-aa-quiz .ifsm-progress-fill { transition: none; }
   }
+
 
   #ifsm-aa-quiz .ifsm-stage { padding: 1.75rem 1.5rem 1.5rem; background: var(--ifsm-panel); }
   #ifsm-aa-quiz .ifsm-step-label {
@@ -98,6 +103,7 @@
     font-weight: 500;
   }
   #ifsm-aa-quiz details.ifsm-details[open] summary { margin-bottom: .4rem; }
+
 
   #ifsm-aa-quiz .ifsm-options { display: flex; flex-direction: column; border-top: 1px solid var(--ifsm-border); }
   #ifsm-aa-quiz .ifsm-option {
@@ -132,6 +138,7 @@
   #ifsm-aa-quiz .ifsm-option-title { font-weight: 500; }
   #ifsm-aa-quiz .ifsm-option-sub { font-size: .82rem; color: var(--ifsm-text-soft); margin-top: .1rem; }
 
+
   #ifsm-aa-quiz .ifsm-field { margin-bottom: 1rem; }
   #ifsm-aa-quiz .ifsm-field label { display: block; font-size: .88rem; font-weight: 500; margin-bottom: .3rem; }
   #ifsm-aa-quiz .ifsm-field input[type="number"] {
@@ -150,6 +157,7 @@
     font: inherit;
   }
 
+
   #ifsm-aa-quiz .ifsm-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; }
   #ifsm-aa-quiz .ifsm-btn {
     font: inherit; font-weight: 500; font-size: .92rem; border-radius: var(--ifsm-radius);
@@ -162,11 +170,13 @@
   #ifsm-aa-quiz .ifsm-btn-ghost:hover { background: var(--ifsm-primary-tint); }
   #ifsm-aa-quiz .ifsm-btn:focus-visible { outline: 2px solid var(--ifsm-primary); outline-offset: 2px; }
 
+
   #ifsm-aa-quiz .ifsm-disclaimer {
     background: var(--ifsm-warn-bg); color: var(--ifsm-warn-text);
     border-radius: var(--ifsm-radius); padding: .8rem .95rem; font-size: .85rem; margin-top: 1.25rem;
   }
   #ifsm-aa-quiz .ifsm-disclaimer strong { display: block; margin-bottom: .2rem; }
+
 
   #ifsm-aa-quiz .ifsm-result-summary { font-size: .95rem; margin: 0 0 1.3rem; color: var(--ifsm-text-soft); }
   #ifsm-aa-quiz .ifsm-result-line {
@@ -189,10 +199,21 @@
     border-radius: 999px; padding: .25rem .7rem; margin-bottom: 1rem;
   }
 
+
   @media (max-width: 480px) {
     #ifsm-aa-quiz { margin: 1rem 0; border-radius: 0; }
     #ifsm-aa-quiz .ifsm-h1 { font-size: 1.1rem; }
     #ifsm-aa-quiz .ifsm-question { font-size: 1.15rem; }
+  }
+  #ifsm-aa-quiz .ifsm-nav { gap: .75rem; flex-wrap: wrap; }
+  #ifsm-aa-quiz .ifsm-portal { display: block; text-align: center; text-decoration: none; margin-top: 1rem; }
+  #ifsm-aa-quiz .ifsm-error { color: #9b2525; font-size: .88rem; }
+  #ifsm-aa-quiz .ifsm-question:focus { outline: 2px solid var(--ifsm-primary); outline-offset: 4px; }
+  #ifsm-aa-quiz .ifsm-result-desc { min-width: 0; overflow-wrap: anywhere; }
+  #ifsm-aa-quiz .ifsm-edital-tag { overflow-wrap: anywhere; }
+  @media (max-width: 480px) {
+    #ifsm-aa-quiz .ifsm-nav .ifsm-btn { width: 100%; }
+    #ifsm-aa-quiz .ifsm-stage { padding: 1.25rem 1rem; }
   }
 </style>
 
@@ -200,24 +221,29 @@
   <div class="ifsm-head-row">
     <div>
       <p class="ifsm-eyebrow">Vestibular 2027 IFSULDEMINAS</p>
-      <h2 class="ifsm-h1">Simulador de ações afirmativas</h2>
+      <h1 class="ifsm-h1">Simulador de ações afirmativas</h1>
     </div>
   </div>
 </div>
-<div class="ifsm-progress-track"><div class="ifsm-progress-fill" id="ifsm-progress-fill"></div></div>
+<div class="ifsm-progress-track" aria-hidden="true"><div class="ifsm-progress-fill" id="ifsm-progress-fill"></div></div>
+<noscript>Ative o JavaScript no navegador para utilizar o simulador.</noscript>
 <div class="ifsm-stage" id="ifsm-stage"></div>
 </div>
+
 
 <script>
 (function () {
   "use strict";
 
+
   // ---------------------------------------------------------------------
   // CONFIGURAÇÃO. Ajuste aqui a cada novo processo seletivo
   // ---------------------------------------------------------------------
   var APP_CONFIG = {
+    vestibularUrl: "https://portal.ifsuldeminas.edu.br/vestibular-proen",
+    ofertaAviso: "As modalidades dependem da oferta por curso, campus e forma de ingresso. Verifique no edital se o curso que você escolheu possui vagas na ação afirmativa em que você pode se enquadrar.",
     // Renda familiar bruta per capita usada como linha de corte das
-    // linhas "LB_..." (renda baixa). O edital 2027 define o critério como
+    // linhas "LB_..." (baixa renda). O edital 2027 define o critério como
     // "igual ou inferior a 1 (um) salário-mínimo per capita", mas o VALOR
     // em reais referente a 2027 ainda não havia sido publicado pelo
     // IFSULDEMINAS até a criação deste simulador (set/2026). Está sendo
@@ -225,6 +251,7 @@
     // >>> ATUALIZE este número assim que o edital divulgar o valor oficial. <<<
     incomePerCapitaThreshold: 1621.00,
     incomeThresholdIsProvisional: true,
+
 
     editalLabel: {
       superior: "Edital 211/2026: Cursos Superiores",
@@ -237,6 +264,7 @@
       subsequente: "Ensino Fundamental"
     }
   };
+
 
   // ---------------------------------------------------------------------
   // ESTADO
@@ -254,11 +282,14 @@
   var history = [];
   var current = "intro";
 
+
   var stepWeight = { courseType: 1, schoolType: 2, pcd: 3, ppi: 4, quilombola: 5, income: 6 };
+
 
   function fmtBRL(n) {
     return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
+
 
   function nextStepId() {
     switch (current) {
@@ -273,23 +304,28 @@
     }
   }
 
+
   function goNext() {
     var target = nextStepId();
     history.push(current);
     current = target;
     render();
+    focusQuestion();
   }
   function goBack() {
     if (history.length === 0) return;
     current = history.pop();
     render();
+    focusQuestion();
   }
   function restart() {
     state = { courseType: null, schoolType: null, pcd: null, ppi: null, quilombola: null, incomeLow: null, totalIncome: null, familySize: null };
     history = [];
     current = "intro";
     render();
+    focusQuestion();
   }
+
 
   // ---------------------------------------------------------------------
   // RESULTADO
@@ -298,88 +334,93 @@
     var level = APP_CONFIG.schoolLevelLabel[state.courseType];
     var edital = APP_CONFIG.editalLabel[state.courseType];
 
+
     if (state.schoolType === "private") {
       if (state.pcd === true) {
         return {
           headline: "PcD Geral",
-          summary: "Você concorre à cota institucional PcD Geral, destinada a pessoas com deficiência comprovada por laudo médico. Essa cota não exige ter cursado o " + level + " em escola pública.",
+          summary: "Pelas respostas informadas, você pode se enquadrar na cota institucional PcD Geral, destinada a pessoas com deficiência comprovada por laudo médico. Essa cota não exige ter cursado o " + level + " em escola pública.",
           lines: [{
             code: "PcD Geral",
-            title: "Pessoas com Deficiência (fora das Ações Afirmativas)",
+            title: "Cota institucional PcD Geral",
             desc: "Vaga reservada especificamente a pessoas com deficiência. Não exige comprovação de renda nem de escola pública, apenas laudo médico."
           }],
           edital: edital,
-          notes: []
+          notes: ["Você também pode optar pela Ampla Concorrência, se preferir não utilizar a cota PcD Geral, conforme as opções disponíveis para seu curso no edital."]
         };
       }
       return {
         headline: "Ampla Concorrência (AC)",
-        summary: "Como você cursou parte ou todo o " + level + " em escola particular, você concorre pela Ampla Concorrência, disputada por todos(as) os(as) candidatos(as).",
+        summary: "Pelas respostas informadas, sua trajetória no " + level + " não se enquadra no requisito de escolaridade pública ou equivalente. Você pode concorrer pela Ampla Concorrência.",
         lines: [{
           code: "AC",
           title: "Ampla Concorrência",
-          desc: "Vaga sem reserva de cota, sem exigência de renda, escolaridade anterior ou autodeclaração."
+          desc: "Vaga sem reserva de cota, sem exigência de renda ou autodeclaração para essa modalidade. Os requisitos de escolaridade do curso continuam obrigatórios."
         }],
         edital: edital,
         notes: []
       };
     }
 
+
     // ramo escola pública / equivalente
     var lines = [];
     lines.push({
       code: "LI_EP",
-      title: "Renda independente + Escola Pública",
-      desc: "Para quem cursou integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital), sem exigência de renda baixa nem de autodeclaração racial, quilombola ou de deficiência."
+      title: "Independentemente da renda + Escola Pública",
+      desc: "Para quem cursou integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital), sem exigência de baixa renda nem de autodeclaração racial, quilombola ou de deficiência."
     });
     if (state.ppi) {
       lines.push({
         code: "LI_PPI",
-        title: "Renda independente + Preto(a), pardo(a) ou indígena",
+        title: "Independentemente da renda + Preto(a), pardo(a) ou indígena",
         desc: "Mesma condição de escolaridade pública, com autodeclaração de cor/raça (sujeita a procedimento de heteroidentificação)."
       });
     }
     if (state.quilombola) {
       lines.push({
         code: "LI_Q",
-        title: "Renda independente + Quilombola",
+        title: "Independentemente da renda + Quilombola",
         desc: "Mesma condição de escolaridade pública, com autodeclaração de pertencimento a comunidade quilombola."
       });
     }
     if (state.pcd) {
       lines.push({
         code: "LI_PCD",
-        title: "Renda independente + Pessoa com Deficiência",
+        title: "Independentemente da renda + Pessoa com Deficiência",
         desc: "Mesma condição de escolaridade pública, para candidatos(as) com deficiência comprovada por laudo médico, dentro do sistema de Ações Afirmativas."
       });
     }
     if (state.incomeLow === true) {
       lines.push({
         code: "LB_EP",
-        title: "Renda baixa + Escola Pública",
+        title: "Baixa Renda + Escola Pública",
         desc: "Além da escolaridade pública, exige renda familiar bruta per capita igual ou inferior a 1 salário-mínimo, comprovada pela Folha Resumo do CadÚnico."
       });
-      if (state.ppi) lines.push({ code: "LB_PPI", title: "Renda baixa + Preto(a), pardo(a) ou indígena", desc: "Combina renda baixa comprovada com autodeclaração de cor/raça." });
-      if (state.quilombola) lines.push({ code: "LB_Q", title: "Renda baixa + Quilombola", desc: "Combina renda baixa comprovada com autodeclaração de pertencimento quilombola." });
-      if (state.pcd) lines.push({ code: "LB_PCD", title: "Renda baixa + Pessoa com Deficiência", desc: "Combina renda baixa comprovada com deficiência comprovada por laudo médico." });
+      if (state.ppi) lines.push({ code: "LB_PPI", title: "Baixa Renda + Preto(a), pardo(a) ou indígena", desc: "Combina baixa renda comprovada com autodeclaração de cor/raça." });
+      if (state.quilombola) lines.push({ code: "LB_Q", title: "Baixa Renda + Quilombola", desc: "Combina baixa renda comprovada com autodeclaração de pertencimento quilombola." });
+      if (state.pcd) lines.push({ code: "LB_PCD", title: "Baixa Renda + Pessoa com Deficiência", desc: "Combina baixa renda comprovada com deficiência comprovada por laudo médico." });
     }
 
+
     var notes = [];
-    if (state.pcd) notes.push("Por ser pessoa com deficiência, você também pode optar pela cota institucional PcD Geral (fora do sistema de Ações Afirmativas), que não exige comprovação de escola pública.");
-    notes.push("Mesmo se enquadrando em uma ou mais Ações Afirmativas, você pode optar por concorrer apenas pela Ampla Concorrência, se preferir não usar nenhuma cota.");
+    if (state.pcd) notes.push("Por ser pessoa com deficiência, você também pode optar pela cota institucional PcD Geral, que não exige comprovação de escola pública.");
+    notes.push("Mesmo podendo se enquadrar em uma ou mais Ações Afirmativas, você pode optar por concorrer apenas pela Ampla Concorrência, se preferir não usar nenhuma cota.");
     if (state.incomeLow === null) {
-      notes.push("Você não informou a renda familiar. Se ela for igual ou inferior a " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + " por pessoa (valor provisório, veja o aviso abaixo), você também se enquadra nas linhas de renda baixa (\u201cLB_...\u201d) correspondentes.");
+      notes.push("Você não informou a renda familiar. Se atender ao critério de renda previsto no edital, você também pode se enquadrar nas linhas de baixa renda (\u201cLB_...\u201d) correspondentes.");
     }
-    notes.push("No ato da inscrição, você escolherá apenas UMA linha entre as listadas abaixo. Escolha a que melhor representa sua situação e para a qual você tem como reunir a documentação exigida.");
+    notes.push("No ato da inscrição, você escolherá apenas UMA linha entre as modalidades disponíveis para seu curso. Escolha a que melhor representa sua situação e para a qual você tem como reunir a documentação exigida.");
+
 
     return {
       headline: "Linhas de Ação Afirmativa compatíveis",
-      summary: "Você atende ao pré-requisito de ter cursado integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital). Veja abaixo as linhas em que você pode se inscrever.",
+      summary: "Pelas respostas informadas, você pode atender ao requisito de ter cursado integralmente o " + level + " em escola pública (ou equivalente reconhecido em edital). Veja abaixo as linhas possivelmente compatíveis com seu perfil, sujeitas à oferta do curso e à análise da documentação.",
       lines: lines,
       edital: edital,
       notes: notes
     };
   }
+
 
   // ---------------------------------------------------------------------
   // RENDER
@@ -387,15 +428,42 @@
   var stage = document.getElementById("ifsm-stage");
   var progressFill = document.getElementById("ifsm-progress-fill");
 
+
   function updateProgress() {
     var pct = 0;
     if (current === "intro") pct = 0;
     else if (current === "result") pct = 100;
     else {
-      var total = state.schoolType === "private" ? 3 : 6;
+      var total = 7; // A barra chega a 100% somente no resultado.
       pct = Math.round((stepWeight[current] / total) * 100);
     }
     progressFill.style.width = pct + "%";
+  }
+
+
+  function focusQuestion() {
+    var heading = stage.querySelector(".ifsm-question");
+    if (heading) { heading.tabIndex = -1; heading.focus(); }
+  }
+  function incomeReference() {
+    return APP_CONFIG.incomeThresholdIsProvisional
+      ? "Referência provisória: " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + " por pessoa, correspondente ao salário mínimo de 2026. O enquadramento deverá ser confirmado mediante análise na etapa de matrícula."
+      : "Valor de referência: " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + " por pessoa.";
+  }
+  function appendOferta() {
+    var notice = document.createElement("div");
+    notice.className = "ifsm-disclaimer";
+    notice.textContent = APP_CONFIG.ofertaAviso;
+    stage.appendChild(notice);
+  }
+  function selectOption(button) {
+    Array.from(button.parentNode.children).forEach(function (el) {
+      var selected = el === button;
+      el.classList.toggle("is-selected", selected);
+      el.setAttribute("aria-pressed", String(selected));
+    });
+    var next = stage.querySelector(".ifsm-nav .ifsm-btn-primary");
+    if (next) next.disabled = false;
   }
 
   function optionRow(container, opts) {
@@ -408,33 +476,36 @@
       '<span><span class="ifsm-option-title">' + opts.title + '</span>' +
       (opts.sub ? '<div class="ifsm-option-sub">' + opts.sub + '</div>' : '') +
       '</span>';
-    btn.addEventListener("click", opts.onClick);
+    btn.setAttribute("aria-pressed", String(!!opts.selected));
+    btn.addEventListener("click", function () { opts.onClick(); selectOption(btn); });
     container.appendChild(btn);
     return btn;
   }
 
+
   function render() {
     updateProgress();
     stage.innerHTML = "";
+
 
     if (current === "intro") return renderIntro();
     if (current === "courseType") return renderCourseType();
     if (current === "schoolType") return renderSchoolType();
     if (current === "pcd") return renderYesNo({
       key: "pcd",
-      label: "Pergunta " + stepWeight.pcd + " de " + (state.schoolType === "private" ? 3 : 6),
+      label: "Pergunta " + stepWeight.pcd,
       question: "Você é pessoa com deficiência, comprovada por laudo médico?",
       help: "Considera-se pessoa com deficiência quem se enquadra nas categorias do Decreto nº 3.298/1999, com comprovação por laudo médico no ato da matrícula."
     });
     if (current === "ppi") return renderYesNo({
       key: "ppi",
-      label: "Pergunta " + stepWeight.ppi + " de 6",
+      label: "Pergunta " + stepWeight.ppi,
       question: "Você se autodeclara preto(a), pardo(a) ou indígena?",
-      help: "Essa autodeclaração poderá passar por procedimento de heteroidentificação promovido pelo IFSULDEMINAS, conforme a Portaria MEC nº 2.027/2023."
+      help: "Essa autodeclaração passará por procedimento de heteroidentificação promovido pelo IFSULDEMINAS."
     });
     if (current === "quilombola") return renderYesNo({
       key: "quilombola",
-      label: "Pergunta " + stepWeight.quilombola + " de 6",
+      label: "Pergunta " + stepWeight.quilombola,
       question: "Você se autodeclara quilombola, integrante de comunidade remanescente de quilombo?",
       help: "Diz respeito ao pertencimento a comunidade quilombola reconhecida, e é independente da resposta que você deu sobre cor/raça."
     });
@@ -442,32 +513,36 @@
     if (current === "result") return renderResult();
   }
 
+
   function renderIntro() {
     var wrap = document.createElement("div");
     wrap.innerHTML =
-      '<p class="ifsm-step-label">Antes de começar</p>' +
       '<h3 class="ifsm-question">Descubra em qual modalidade de concorrência você pode se inscrever</h3>' +
-      '<p class="ifsm-help">Responda a algumas perguntas sobre sua trajetória escolar, renda familiar e autodeclarações. Ao final, você verá as linhas de Ação Afirmativa, PcD Geral ou Ampla Concorrência compatíveis com a sua situação, segundo os editais do Vestibular IFSULDEMINAS 2027 (ingresso em 2027/1).</p>' +
-      '<div class="ifsm-disclaimer"><strong>Este simulador é só um apoio.</strong> Ele não substitui a leitura do edital nem faz sua inscrição. A palavra final sobre enquadramento e documentação é sempre da Comissão do Processo Seletivo do IFSULDEMINAS.</div>';
+      '<p class="ifsm-help">Responda a algumas perguntas sobre sua trajetória escolar, renda familiar e autodeclarações. Ao final, você verá as linhas de Ação Afirmativa, PcD Geral ou Ampla Concorrência compatíveis com a sua situação, segundo os editais do Vestibular IFSULDEMINAS 2027.</p>' +
+      '<div class="ifsm-disclaimer"><strong>Este simulador é só um apoio.</strong> Ele não substitui a leitura do edital nem faz sua inscrição. A responsabilidade pela escolha do tipo de concorrência é somente do(a) candidato(a) e do seu responsável. Qualquer ação afirmativa que se escolha exige comprovação no momento da matrícula.</div>';
     stage.appendChild(wrap);
+    appendOferta();
     appendNav({ showBack: false, nextLabel: "Iniciar simulação" });
   }
+
 
   function renderCourseType() {
     var wrap = document.createElement("div");
     wrap.innerHTML =
-      '<p class="ifsm-step-label">Pergunta ' + stepWeight.courseType + ' de 6</p>' +
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.courseType + '</p>' +
       '<h3 class="ifsm-question">A qual tipo de curso você vai concorrer?</h3>' +
       '<p class="ifsm-help">Isso define qual edital e qual etapa de escolaridade (Fundamental ou Médio) valem para o seu caso.</p>';
     stage.appendChild(wrap);
+
 
     var opts = document.createElement("div");
     opts.className = "ifsm-options";
     stage.appendChild(opts);
 
+
     var items = [
-      { value: "superior", title: "Curso superior (graduação)", sub: "Bacharelado, licenciatura ou tecnólogo. Edital 211/2026." },
-      { value: "integrado", title: "Técnico integrado ao Ensino Médio", sub: "Edital 210/2026" },
+      { value: "superior", title: "Curso superior (graduação)", sub: "Para quem já concluiu o Ensino Médio. Bacharelado, licenciatura ou tecnólogo. Edital 211/2026." },
+      { value: "integrado", title: "Técnico integrado ao Ensino Médio", sub: "Para quem concluiu ou está concluindo o Ensino Fundamental. Edital 210/2026" },
       { value: "subsequente", title: "Técnico subsequente", sub: "Para quem já concluiu o Ensino Médio. Editais 209/2026 e 212/2026." }
     ];
     items.forEach(function (it) {
@@ -475,47 +550,65 @@
         selected: state.courseType === it.value,
         title: it.title,
         sub: it.sub,
-        onClick: function () { state.courseType = it.value; render(); }
+        onClick: function () {
+          if (state.courseType && APP_CONFIG.schoolLevelLabel[state.courseType] !== APP_CONFIG.schoolLevelLabel[it.value]) {
+            state.schoolType = null; state._schoolChoiceIdx = null;
+          }
+          state.courseType = it.value;
+        }
       });
     });
 
+
     appendNav({ showBack: true, nextDisabled: !state.courseType });
   }
+
 
   function renderSchoolType() {
     var level = APP_CONFIG.schoolLevelLabel[state.courseType];
     var wrap = document.createElement("div");
     wrap.innerHTML =
-      '<p class="ifsm-step-label">Pergunta ' + stepWeight.schoolType + ' de 6</p>' +
-      '<h3 class="ifsm-question">Como você cursou (ou vai concluir) integralmente o ' + level + '?</h3>';
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.schoolType + '</p>' +
+      '<h3 class="ifsm-question">Onde você cursou ou está cursando o ' + level + '?</h3>';
     stage.appendChild(wrap);
+
 
     var details = document.createElement("details");
     details.className = "ifsm-details";
     details.innerHTML = "<summary>O que conta como escola pública?</summary>" +
-      "<p>Escolas criadas, mantidas e administradas pelo Poder Público, e também escolas comunitárias de educação do campo (como EFAs e CFRs) conveniadas com o poder público. Escolas do Sistema S (SENAI, SENAC etc.), APAEs e demais entidades filantrópicas ou privadas NÃO contam como escola pública, mesmo com bolsa de estudos integral.</p>";
+      "<p>Considere todos os anos do " + level + ", não apenas a escola em que concluiu ou concluirá os estudos.</p>" +
+      "<p>Escolas públicas são criadas, mantidas e administradas pelo Poder Público.</p>" +
+      (state.courseType === "superior"
+        ? "<p>Para a graduação, também são aceitas escolas comunitárias de educação do campo (como EFAs e CFRs) conveniadas com o poder público.</p>"
+        : "<p>Para os cursos técnicos, escolas comunitárias de educação do campo não se aplicam ao requisito de Ensino Fundamental público.</p>") +
+      "<p><strong>Escolas do Sistema S (SENAI, SENAC etc.), APAEs e demais entidades filantrópicas ou privadas não contam como escola pública, mesmo com bolsa integral.</strong></p>";
+
     stage.appendChild(details);
+
 
     var opts = document.createElement("div");
     opts.className = "ifsm-options";
     stage.appendChild(opts);
 
+
     var items = [
-      { value: "public", title: "Integralmente em escola pública", sub: "Inclui escolas comunitárias de educação do campo conveniadas com o poder público" },
+      { value: "public", title: "Integralmente em escola pública", sub: state.courseType === "superior" ? "Inclui escolas comunitárias de educação do campo conveniadas com o poder público" : "Todos os anos do Ensino Fundamental em escola pública" },
       { value: "public", title: "Certificação via ENCCEJA ou exame de instituição pública", sub: "Exames como CESEC, ENCCEJA ou avaliações de jovens e adultos de sistemas públicos de ensino contam como escolaridade pública" },
-      { value: "private", title: "Integral ou parcialmente em escola particular", sub: "Mesmo com bolsa de estudos integral" }
+      { value: "private", title: "Integral ou parcialmente em escola particular ou outra instituição não abrangida acima", sub: "Mesmo com bolsa de estudos integral" }
     ];
     items.forEach(function (it, idx) {
       optionRow(opts, {
         selected: state.schoolType === it.value && state._schoolChoiceIdx === idx,
         title: it.title,
         sub: it.sub,
-        onClick: function () { state.schoolType = it.value; state._schoolChoiceIdx = idx; render(); }
+        onClick: function () { state.schoolType = it.value; state._schoolChoiceIdx = idx; }
       });
     });
 
+
     appendNav({ showBack: true, nextDisabled: !state.schoolType });
   }
+
 
   function renderYesNo(opts) {
     var wrap = document.createElement("div");
@@ -525,57 +618,74 @@
       (opts.help ? '<p class="ifsm-help">' + opts.help + '</p>' : '');
     stage.appendChild(wrap);
 
+
     var row = document.createElement("div");
     row.className = "ifsm-options";
     stage.appendChild(row);
+
 
     [{ v: true, t: "Sim" }, { v: false, t: "Não" }].forEach(function (it) {
       optionRow(row, {
         selected: state[opts.key] === it.v,
         title: it.t,
-        onClick: function () { state[opts.key] = it.v; render(); }
+        onClick: function () { state[opts.key] = it.v; }
       });
     });
+
 
     appendNav({ showBack: true, nextDisabled: state[opts.key] === null });
   }
 
+
   function renderIncome() {
     var wrap = document.createElement("div");
     wrap.innerHTML =
-      '<p class="ifsm-step-label">Pergunta ' + stepWeight.income + ' de 6</p>' +
-      '<h3 class="ifsm-question">Qual é a renda familiar bruta per capita?</h3>' +
-      '<p class="ifsm-help">Some a renda bruta de todas as pessoas da sua família (média dos últimos 3 meses) e informe quantas pessoas moram na casa. O cálculo é feito automaticamente.</p>';
+      '<p class="ifsm-step-label">Pergunta ' + stepWeight.income + '</p>' +
+      '<h3 class="ifsm-question">Vamos calcular a renda da sua família por pessoa?</h3>' +
+      '<p class="ifsm-help">Informe a média mensal da renda bruta total da família e quantas pessoas da família moram na casa, incluindo você. Não divida a renda pelo número de pessoas: o simulador fará essa divisão automaticamente.</p>';
     stage.appendChild(wrap);
+
 
     var details = document.createElement("details");
     details.className = "ifsm-details";
     details.innerHTML = "<summary>O que é \u201crenda bruta\u201d e \u201cmédia dos últimos 3 meses\u201d?</summary>" +
-      "<p><strong>Renda bruta</strong> é o valor total recebido antes de qualquer desconto (sem tirar imposto de renda, INSS, plano de saúde etc.). Some tudo o que cada pessoa da casa recebeu: salário, aposentadoria, pensão, bico ou trabalho informal, benefícios sociais (como Bolsa Família), aluguéis recebidos e outras fontes de renda.</p>" +
-      "<p><strong>Média dos últimos 3 meses</strong> quer dizer que você não deve usar apenas o valor do mês atual. Some a renda bruta da família em cada um dos 3 meses anteriores à inscrição, depois divida o total por 3. Isso evita que um mês fora do padrão (para mais ou para menos) distorça o resultado.</p>" +
-      "<p>Depois de calcular essa média mensal da família, divida pelo número de pessoas da casa: esse é o valor de renda per capita que o formulário abaixo calcula automaticamente para você.</p>";
+      "<p><strong>Renda bruta</strong> é o valor total recebido antes de qualquer desconto (sem tirar imposto de renda, INSS, plano de saúde etc.). Some tudo o que cada pessoa da casa recebeu: salário, aposentadoria, pensão e rendimentos de trabalho informal, observando no edital quais rendimentos devem ser incluídos ou excluídos.</p>" +
+      "<p><strong>Média dos últimos 3 meses</strong> quer dizer que você não deve usar apenas o valor do mês atual. Some a renda bruta da família em cada um dos 3 meses anteriores à inscrição, depois divida o total por 3. O edital considera, no mínimo, os três meses anteriores à inscrição. Este cálculo usa três meses como estimativa; confira as orientações de comprovação no edital.</p>" +
+      "<p>Informe abaixo a média mensal total da família, sem dividir pelo número de pessoas. O simulador fará essa divisão automaticamente.</p>";
     stage.appendChild(details);
+
 
     var prefillTotal = state.totalIncome !== null ? state.totalIncome : "";
     var prefillPeople = state.familySize !== null ? state.familySize : "";
 
+
     var f1 = document.createElement("div");
     f1.className = "ifsm-field";
     f1.innerHTML = '<label for="ifsm-income-total">Renda bruta mensal total da família, já na média dos últimos 3 meses (R$)</label>' +
-      '<input type="number" min="0" step="0.01" id="ifsm-income-total" placeholder="Ex.: 3200,00" value="' + prefillTotal + '">';
+      '<input type="number" min="0" step="0.01" id="ifsm-income-total" placeholder="Ex.: 3200,00" value="' + prefillTotal + '" aria-describedby="ifsm-income-error">';
     stage.appendChild(f1);
+
 
     var f2 = document.createElement("div");
     f2.className = "ifsm-field";
-    f2.innerHTML = '<label for="ifsm-income-people">Número de pessoas na família (incluindo você)</label>' +
-      '<input type="number" min="1" step="1" id="ifsm-income-people" placeholder="Ex.: 4" value="' + prefillPeople + '">';
+    f2.innerHTML = '<label for="ifsm-income-people">Número de pessoas da família que moram na casa (incluindo você)</label>' +
+      '<input type="number" min="1" step="1" id="ifsm-income-people" placeholder="Ex.: 4" value="' + prefillPeople + '" aria-describedby="ifsm-income-error">';
     stage.appendChild(f2);
+
 
     var resultBox = document.createElement("div");
     resultBox.className = "ifsm-income-result";
+    var errorBox = document.createElement("p");
+    errorBox.id = "ifsm-income-error";
+    errorBox.className = "ifsm-error";
+    errorBox.setAttribute("aria-live", "polite");
+    stage.appendChild(errorBox);
     resultBox.id = "ifsm-income-feedback";
+    resultBox.setAttribute("role", "status");
+    resultBox.setAttribute("aria-live", "polite");
     resultBox.style.display = "none";
     stage.appendChild(resultBox);
+
 
     var skip = document.createElement("button");
     skip.type = "button";
@@ -589,24 +699,41 @@
     });
     stage.appendChild(skip);
 
+
     var inputTotal = document.getElementById("ifsm-income-total");
     var inputPeople = document.getElementById("ifsm-income-people");
     var nextBtnRef;
 
+
     function recompute() {
-      var total = parseFloat(inputTotal.value);
-      var people = parseInt(inputPeople.value, 10);
-      if (!isNaN(total) && !isNaN(people) && people > 0 && total >= 0) {
+      var total = inputTotal.valueAsNumber;
+      var people = inputPeople.valueAsNumber;
+      var totalValid = Number.isFinite(total) && total >= 0 && inputTotal.validity.valid;
+      var peopleValid = Number.isSafeInteger(people) && people > 0 && inputPeople.validity.valid;
+      state.totalIncome = totalValid ? total : null;
+      state.familySize = peopleValid ? people : null;
+      inputTotal.setAttribute("aria-invalid", String(!totalValid && (inputTotal.value !== "" || inputTotal.validity.badInput)));
+      inputPeople.setAttribute("aria-invalid", String(!peopleValid && (inputPeople.value !== "" || inputPeople.validity.badInput)));
+      errorBox.textContent = !peopleValid && (inputPeople.value !== "" || inputPeople.validity.badInput)
+        ? "Informe um número inteiro de pessoas, maior ou igual a 1."
+        : !totalValid && (inputTotal.value !== "" || inputTotal.validity.badInput)
+        ? "Informe uma renda válida, igual ou maior que zero, com até duas casas decimais." : "";
+      if (totalValid && peopleValid) {
         var perCapita = total / people;
         var low = perCapita <= APP_CONFIG.incomePerCapitaThreshold;
         state.totalIncome = total;
         state.familySize = people;
         state.incomeLow = low;
         resultBox.style.display = "block";
-        resultBox.innerHTML = "Renda per capita: <strong>" + fmtBRL(perCapita) + "</strong><br>" +
+        resultBox.innerHTML = "Renda por pessoa: <strong>" + fmtBRL(perCapita) + "</strong><br>" +
           (low
-            ? "Igual ou inferior ao valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Você também pode se enquadrar nas linhas de renda baixa."
-            : "Acima do valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Você se enquadra apenas nas linhas independentes de renda.");
+            ? "Igual ou inferior ao valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Pelas respostas informadas, você também pode se enquadrar nas linhas de baixa renda."
+            : "Acima do valor de referência (" + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + "). Pelas respostas informadas, nesta estimativa você pode se enquadrar nas linhas que independem da renda. Confirme a referência de renda aplicável no edital.");
+        // Só explica o arredondamento quando o valor exibido parece igual ao limite,
+        // mas o cálculo completo está acima dele. Não altera a classificação.
+        if (!low && fmtBRL(perCapita) === fmtBRL(APP_CONFIG.incomePerCapitaThreshold)) {
+          resultBox.innerHTML += "<p><strong>Sobre o arredondamento:</strong> o valor exibido foi arredondado para duas casas decimais. O resultado da divisão, antes do arredondamento, ficou ligeiramente acima do limite de referência; por isso, esta estimativa indica renda acima do limite.</p>";
+        }
         if (nextBtnRef) nextBtnRef.disabled = false;
       } else {
         resultBox.style.display = "none";
@@ -618,16 +745,17 @@
     inputPeople.addEventListener("input", recompute);
     if (state.totalIncome !== null && state.familySize !== null) recompute();
 
+
     var incomeNote = document.createElement("p");
     incomeNote.className = "ifsm-help";
     incomeNote.style.marginTop = "1rem";
-    incomeNote.innerHTML = APP_CONFIG.incomeThresholdIsProvisional
-      ? "<em>Valor de referência provisório: " + fmtBRL(APP_CONFIG.incomePerCapitaThreshold) + ", visto que o salário mínimo oficial de 2027 ainda não foi definido oficialmente.</em>"
-      : "";
+    incomeNote.textContent = incomeReference();
     stage.appendChild(incomeNote);
+
 
     nextBtnRef = appendNav({ showBack: true, nextDisabled: state.incomeLow === null });
   }
+
 
   function renderResult() {
     var result = buildResult();
@@ -637,6 +765,7 @@
       '<h3 class="ifsm-question">' + result.headline + '</h3>' +
       '<p class="ifsm-result-summary">' + result.summary + '</p>';
     stage.appendChild(wrap);
+
 
     var list = document.createElement("div");
     result.lines.forEach(function (l) {
@@ -649,21 +778,60 @@
     });
     stage.appendChild(list);
 
+
     if (result.notes.length) {
       var ul = document.createElement("ul");
       ul.className = "ifsm-notes";
       result.notes.forEach(function (n) {
         var li = document.createElement("li");
-        li.textContent = n;
+        if (n.startsWith("No ato da inscrição,")) {
+          var strong = document.createElement("strong");
+          strong.textContent = n;
+          li.appendChild(strong);
+        } else {
+          li.textContent = n;
+        }
         ul.appendChild(li);
       });
       stage.appendChild(ul);
     }
 
+
     var disclaimer = document.createElement("div");
     disclaimer.className = "ifsm-disclaimer";
-    disclaimer.innerHTML = "<strong>Confirme sempre no edital oficial.</strong> A comprovação de renda é feita pela Folha Resumo do CadÚnico atualizada. A comprovação de cor/raça, deficiência e pertencimento quilombola segue procedimentos próprios (heteroidentificação, laudo médico, autodeclaração) descritos na seção de documentação do edital escolhido. Em caso de dúvida, entre em contato pelos telefones e e-mails disponíveis no edital.";
+    var hasLowIncome = result.lines.some(function (line) { return line.code.indexOf("LB_") === 0; });
+    disclaimer.innerHTML = "<strong>Confirme sempre no edital oficial.</strong> " +
+      (hasLowIncome ? "Para as linhas de baixa renda, a comprovação é feita pela Folha Resumo do CadÚnico, atualizada nos últimos 24 meses, considerando a data da matrícula. " : "") +
+      "A comprovação de cor/raça, deficiência e pertencimento quilombola, quando aplicável à modalidade escolhida, segue os procedimentos e documentos exigidos no edital. O enquadramento depende da análise da documentação pela comissão responsável. Esta simulação não substitui o edital nem realiza sua inscrição. Em caso de dúvida, consulte os contatos de atendimento disponíveis no edital.";
     stage.appendChild(disclaimer);
+    appendOferta();
+    var links = document.createElement("p");
+    var pages = {
+      superior: [["Edital 211/2026 e canais de atendimento", "https://portal.ifsuldeminas.edu.br/index.php/cursos-superiores/aberto-cursos-superiores/7613-edital-211-2026"]],
+      integrado: [["Edital 210/2026 e canais de atendimento", "https://portal.ifsuldeminas.edu.br/index.php/cursos-tecnicos/abertos-presencial/7615-edital-210-2026"]],
+      subsequente: [["Edital 209/2026 e canais de atendimento", "https://portal.ifsuldeminas.edu.br/index.php/cursos-tecnicos/abertos-presencial/7614-edital-209-2026"], ["Edital 212/2026 e canais de atendimento", "https://portal.ifsuldeminas.edu.br/index.php/cursos-tecnicos/abertos-presencial/7616-edital-212-2027"]]
+    };
+    pages[state.courseType].forEach(function (item) {
+      var link = document.createElement("a"); link.textContent = item[0]; link.href = item[1];
+      link.target = "_blank"; link.rel = "noopener noreferrer";
+      link.setAttribute("aria-label", item[0] + " (abre em nova aba)");
+      link.style.display = "block"; link.style.marginTop = ".75rem"; link.style.color = "#1F4B3F";
+      links.appendChild(link);
+    });
+    stage.appendChild(links);
+    var end = document.createElement("p");
+    end.className = "ifsm-ending";
+    end.textContent = "Confira o edital, as vagas e os contatos de atendimento antes de fazer sua inscrição.";
+    stage.appendChild(end);
+    var portal = document.createElement("a");
+    portal.className = "ifsm-btn ifsm-btn-primary ifsm-portal";
+    portal.href = APP_CONFIG.vestibularUrl;
+    portal.target = "_blank";
+    portal.rel = "noopener noreferrer";
+    portal.textContent = "Acessar a página do Vestibular";
+    portal.setAttribute("aria-label", "Acessar a página do Vestibular (abre em nova aba)");
+    stage.appendChild(portal);
+
 
     var nav = document.createElement("div");
     nav.className = "ifsm-nav";
@@ -674,7 +842,7 @@
     back.addEventListener("click", goBack);
     var again = document.createElement("button");
     again.type = "button";
-    again.className = "ifsm-btn ifsm-btn-primary";
+    again.className = "ifsm-btn ifsm-btn-ghost";
     again.textContent = "Refazer do início";
     again.addEventListener("click", restart);
     nav.appendChild(back);
@@ -682,9 +850,11 @@
     stage.appendChild(nav);
   }
 
+
   function appendNav(opts) {
     var nav = document.createElement("div");
     nav.className = "ifsm-nav";
+
 
     if (opts.showBack) {
       var back = document.createElement("button");
@@ -697,6 +867,7 @@
       nav.appendChild(document.createElement("span"));
     }
 
+
     var next = document.createElement("button");
     next.type = "button";
     next.className = "ifsm-btn ifsm-btn-primary";
@@ -705,9 +876,11 @@
     next.addEventListener("click", goNext);
     nav.appendChild(next);
 
+
     stage.appendChild(nav);
     return next;
   }
+
 
   render();
 })();
